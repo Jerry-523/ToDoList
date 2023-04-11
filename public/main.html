@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Main Page</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <button type="button" class="logout-button">Sair</button><body>
+        
+        <section>
+            <div class="container">
+                <div id="myDIV" class="header">
+                    <h2>Lista de Tarrefas</h2>
+                    <input type="text" id="myInput" placeholder="Title...">
+                    <span onclick="newElement()" class="addBtn">Adicionar</span>
+                  </div>
+                  
+                  <ul id="myUL">
+                    <li>Hit the gym</li>
+                    <li class="checked">Pay bills</li>
+                    <li>Meet George</li>
+                    <li>Buy eggs</li>
+                    <li>Read a book</li>
+                    <li>Organize office</li>
+                  </ul> 
+            </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

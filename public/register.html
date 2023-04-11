@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="css/register.css">
+        <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section>
+                <div class="container">
+                    <div class="buttonsForm">
+                        <div class="btnColor"></div>
+                        <button onclick="window.location='http://localhost:8080/login.html'" id="btnLogin">Login</button>
+                        <button onclick="window.location='http://localhost:8080/register.html'" id="btnCadastro">Cadastro</button>
+                </div>
+                <form id="cadastro">
+                
+                    <input type="text" name="first-name" id="first-name" class="first-name" maxlength="25" placeholder="Nome" required />
+                    <input type="text" name="last-name" id="last-name" class="last-name" maxlength="25" placeholder="Apelido" required />
+                    <i class="fas fa-user iUser"></i>
+                    <input type="text" name="email" id="email" class="email" maxlength="25" placeholder="Email" required />
+                    <i class="fas fa-envelope iEmail2"></i>
+                    <input type="password" name="password" id="password" class="password" maxlength="25" placeholder="Palavra-passe" required />
+                    <i class="fas fa-lock iPassword2"></i>
+                    <div class="divCheck">
+                      M <input type="radio" id="sex" name="sex" value="1" /> 
+                      F <input type="radio" id="sex" name="sex" value="0" /> 
+                    </div>
+                    <input type="submit" class="submit-button" value="Cadastrar">
+                 
+                </form>
+            </div>
+                
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="js/register.js"></script>
+        <script src="../app.js"></script>
+    </body>
+</html>
